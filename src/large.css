@@ -1,0 +1,98 @@
+@media (min-width: 576px) {
+    .landing-page-shadow .container {
+        height: 35%;
+    }
+    
+    .dot {
+        width: 20px;
+        height: 20px;
+        top: -10px;
+        left: -10px;
+    }
+
+    .offer-service-box {
+        width: 45.62%;
+        padding-bottom: 45.62%;
+        margin-right: 8.75%;
+    }
+
+    .offer-service-box:nth-of-type(2n) {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .links {
+        width: 25%;
+        justify-content: space-between;
+        height: 100%;
+        display: flex;
+        align-items: center;        
+    }
+
+    .about .container h1 {
+        text-align: left;
+    }
+
+    .about-employee {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .about-employee:nth-of-type(even) {
+        flex-direction: row-reverse;
+        text-align: right;
+    }
+
+    .about-employee-desc {
+        width: calc(100% - 250px);
+    }
+
+    .about-employee-pic1, .about-employee-pic2 {
+        margin: 0;
+    }
+
+    .offer .container h1 {
+        font-size: 36px;
+        text-align: left;
+    }
+
+    .offer-wrapper {
+        width: 720px;
+    }
+
+    footer .container {
+        flex-direction: row;
+        height: 70px;
+        justify-content: space-between;
+    }
+
+    .landing-page-btn:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .offer-service-box:hover {
+        transform: scale(1.05);
+    }
+}
+
+@media (min-width: 1024px) {
+    .offer-service-box {
+        width: 27.5%;
+        padding-bottom: 27.5%;
+    }
+
+    .offer-service-box:nth-of-type(2n) {
+        margin-right: 8.75%;
+    }
+
+    .offer-service-box:nth-of-type(3n) {
+        margin-right: 0;
+    }
+}
+
+
+
+

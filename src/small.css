@@ -1,0 +1,223 @@
+nav {
+    background-color: #4E4E4E;
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.links {
+    display: none;
+}
+
+.nav-link, .nav-link-contact{
+    color: #F1F1F1;
+    font-weight: 400;
+}
+
+.nav-link-contact {
+    justify-items: center;
+    cursor: not-allowed;
+}
+
+nav .container {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.landing-page {
+    height: calc(100vh - 50px);
+    padding: 0;
+    background-image: url(https://picsum.photos/1920/1080);
+    background-size: cover;
+    background-position: center;
+    color: white; 
+}
+
+.landing-page-shadow {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.15);  
+}
+
+.landing-page-shadow .container {
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.landing-page-shadow .container h1 {
+    width: 60%;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.landing-page-shadow .container p, .landing-page-shadow .container a {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.landing-page-btn {
+    padding: 10px 55px;
+    border: 3px solid white;
+    color: white;
+    text-decoration: none;
+    transition-duration: 1s;
+    cursor: pointer;
+    transition-property: background-color, color;
+}
+
+.about {
+    background-color: #F1F1F1;
+}
+
+.about-employee:last-of-type {
+    margin-bottom: 0px;
+}
+
+.about .container h1 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #150D41;
+    text-align: center;
+}
+
+.about-employee {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+.about-employee-pic {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 50px;
+    flex-shrink: 0;
+    border-radius: 50%;
+
+}
+
+.about-employee-pic-img {
+ max-width: 100%;
+ border-radius: 50%;
+}
+
+/* .about-employee-pic1 {
+    background-image: url(https://media.glamour.com/photos/5a425fd3b6bcee68da9f86f8/16:9/w_2560%2Cc_limit/best-face-oil.png);
+}
+
+.about-employee-pic2 {
+    background-image: url(https://content.latest-hairstyles.com/wp-content/uploads/blonde-wavy-lob-cut-for-a-square-face-500x500.jpg);
+} */
+
+
+.about-employee-desc h2 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+.offer {
+    background-color: #405D78;
+}
+
+.offer-main {
+    height: 140px;
+    width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.offer .container h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.offer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.dot {
+    position: absolute; 
+    top: -10px;
+    left: -10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #E07A64;
+}
+
+.offer-service-box {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    margin-bottom: 8.75%;
+    background-color: #F1F1F1;
+    font-size: 24px;
+    box-shadow: 2px 2px 5px;
+    transition: 0.5s;
+    transition-property: transform;
+}
+
+.offer-service-box h2 {
+    font-size: 18px;
+}
+
+.offer-service-box-text {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    background-color: #4E4E4E;
+}
+
+footer .container {
+    height: 150px;
+    background-color: #4E4E4E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer .container h1 {
+    margin-bottom: 0;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footer-pic {
+    display: flex;
+    width: 80px;
+    justify-content: space-between;
+}
+
+.fab-fa-instagramfa-2x {
+    color: red;
+}

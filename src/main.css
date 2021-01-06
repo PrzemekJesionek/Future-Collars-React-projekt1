@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 94%;
+    margin: 0 auto;
+}
+
+section {
+    padding: 50px 0;
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 960px;
+    }
+}
+
