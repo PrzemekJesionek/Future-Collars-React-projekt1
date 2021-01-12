@@ -1,18 +1,16 @@
-import './small.css';
-import './main.css';
-import './large.css';
+
+import SingleBox from './SingleBox'
 
 
-
-function Box() {
+const Box = () => {
     let boxes = [
         {
             name: "Usługa 1",
-            isNew: true
+            isNew: false
         },
         {
             name: "Usługa 2",
-            isNew: true
+            isNew: false
         },
         {
             name: "Usługa 3",
@@ -44,17 +42,12 @@ function Box() {
 
             {boxes.map(function (boxElem) {
                 return (
-                    <div className="offer-service-box">
-                        <div className="offer-service-box-text">
-                            {boxElem.name}
-                            {boxElem.isNew ? newElem : <></>}
-                        </div>
-                    </div>
+                    < SingleBox isNew={boxElem.isNew} name={boxElem.name} newElem={newElem} />
                 )
             })
 
             }
-        </div>
+        </div >
     )
 }
 

@@ -1,9 +1,5 @@
-import './App.css';
-import './small.css';
-import './main.css';
-import './large.css';
 
-function Footer() {
+const Footer = () => {
     return (
         <footer>
             <div className="container">

@@ -1,9 +1,7 @@
-import './small.css';
-import './main.css';
-import './large.css';
-import Employee from './Employee'
 
-function SectionAbout() {
+import Employee from '../components/Employee'
+
+const SectionAbout = () => {
 
     return (
 

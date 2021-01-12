@@ -1,9 +1,6 @@
-import './small.css';
-import './main.css';
-import './large.css';
 
 
-function SectionLandingPage() {
+const SectionLandingPage = () => {
     return (
         <section className="landing-page">
             <div className="landing-page-shadow">

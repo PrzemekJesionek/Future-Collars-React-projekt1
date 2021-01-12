@@ -1,11 +1,7 @@
-import './reset.css';
-import './small.css';
-import './main.css';
-import './large.css';
 
 
 
-function NavLinks(props) {
+const NavLinks = (props) => {
     return (
         <>
             <a href={props.hrefAbout} className={props.classNameGeneral}>o nas</a>

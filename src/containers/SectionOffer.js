@@ -1,10 +1,8 @@
-import './small.css';
-import './main.css';
-import './large.css';
-import Box from './Box.js'
+
+import Box from '../components/Box.js'
 
 
-function SectionOffer() {
+const SectionOffer = () => {
     return (
         <section className="offer" id="offer">
             <div className="container">

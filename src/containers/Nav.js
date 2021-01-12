@@ -1,9 +1,8 @@
-import './small.css';
-import './main.css';
-import './large.css';
-import NavLinks from './NavLinks';
 
-function Nav() {
+import NavLinks from '../components/NavLinks';
+
+
+const Nav = () => {
     return (
         <nav>
             <div className="container">

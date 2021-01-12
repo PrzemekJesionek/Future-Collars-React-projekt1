@@ -1,8 +1,6 @@
-import './small.css';
-import './main.css';
-import './large.css';
 
-function Employee() {
+
+const Employee = () => {
 
     let people = [{
         name: 'Maria',
@@ -10,7 +8,8 @@ function Employee() {
         jobPosition: 'Księgowa',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
         fotoUrl: 'https://www.padentalimplants.com/wp-content/uploads/2020/05/Smiling-woman-200.jpg',
-        fotoAlt: 'Zdjęcie Marii'
+        fotoAlt: 'Zdjęcie Marii',
+        id: 1,
 
     },
 
@@ -21,6 +20,7 @@ function Employee() {
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
         fotoUrl: 'https://content.latest-hairstyles.com/wp-content/uploads/blonde-wavy-lob-cut-for-a-square-face-500x500.jpg',
         fotoAlt: 'Zdjęcie Darii',
+        id: 2,
     }
         ,
 
@@ -31,6 +31,7 @@ function Employee() {
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
         fotoUrl: 'https://www.byrdie.com/thmb/osJ_pwelu_BO04LbzM-NumhZY7Q=/200x200/filters:no_upscale():max_bytes(150000):strip_icc()/BarretWertz-5e1476ef95a94c479733c2336a6b6a0d.jpg',
         fotoAlt: 'Zdjęcie Radosława',
+        id: 3,
     }
 
     ]
@@ -38,7 +39,7 @@ function Employee() {
     return (
         <>
             {people.map((person) => (
-                <div className="about-employee" >
+                <div className="about-employee" id={person.id}>
                     <div className="about-employee-pic">
                         <img className="about-employee-pic-img" src={person.fotoUrl} alt={person.fotoAlt} />
                     </div>
