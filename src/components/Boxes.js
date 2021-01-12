@@ -2,31 +2,37 @@
 import SingleBox from './SingleBox'
 
 
-const Box = () => {
+const Boxes = () => {
     let boxes = [
         {
             name: "Usługa 1",
-            isNew: false
+            isNew: false,
+            id: "service-1",
         },
         {
             name: "Usługa 2",
-            isNew: false
+            isNew: false,
+            id: "service-2",
         },
         {
             name: "Usługa 3",
-            isNew: false
+            isNew: false,
+            id: "service-3",
         },
         {
             name: "Usługa 4",
-            isNew: true
+            isNew: true,
+            id: "service-4",
         },
         {
             name: "Usługa 5",
-            isNew: true
+            isNew: true,
+            id: "service-5",
         },
         {
             name: "Usługa 6",
-            isNew: true
+            isNew: true,
+            id: "service-6",
         },
 
     ]
@@ -42,7 +48,7 @@ const Box = () => {
 
             {boxes.map(function (boxElem) {
                 return (
-                    < SingleBox isNew={boxElem.isNew} name={boxElem.name} newElem={newElem} />
+                    < SingleBox isNew={boxElem.isNew} name={boxElem.name} newElem={newElem} id={boxElem.id} />
                 )
             })
 
@@ -53,4 +59,4 @@ const Box = () => {
 
 
 
-export default Box
+export default Boxes
