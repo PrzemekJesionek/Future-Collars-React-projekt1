@@ -1,5 +1,5 @@
 
-import SingleBox from './SingleBox'
+import Box from './Box'
 
 
 const Boxes = () => {
@@ -46,9 +46,9 @@ const Boxes = () => {
     return (
         <div className="offer-wrapper">
 
-            {boxes.map(function (boxElem) {
+            {boxes.map(function (box) {
                 return (
-                    < SingleBox isNew={boxElem.isNew} name={boxElem.name} newElem={newElem} id={boxElem.id} />
+                    < Box isNew={box.isNew} name={box.name} newElem={newElem} key={box.id} />
                 )
             })
 
